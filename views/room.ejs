@@ -17,23 +17,20 @@
   </head>
   <body>
     <div class="main">
-      <div class="main__left">
-        <div class="main__videos">
-          <div id="video-grid"></div>
-        </div>
+      <div class="main__left">        
         <div class="main__controls">
           <div class="main__controls__block">
             <div
               onclick="muteUnmute()"
               class="main__controls__button main__mute_button"
             >
-              <span>Mute</span>
+              <span>Silenciar</span>
             </div>
             <div
               onclick="playStartStop()"
               class="main__controls__button main__video_button"
             >
-              <span>Stop Video</span>
+              <span>Parar Video</span>
             </div>
           </div>
           <div class="main__controls__block">
@@ -41,14 +38,28 @@
               onClick="screenShare()"
               class="main__controls__button main__share_button"
             >
-              <span>Presentation</span>
+              <span>Compartilhar tela</span>
+            </div>
+          </div>
+          <div class="main__controls__block">
+            <div class="main__controls__button main__share_button">
+              <a href="https://discord.delanomarcal.com.br/sala1">Sala 1</a>
+            </div>
+            <div class="main__controls__button main__share_button">
+                          <a href="https://discord.delanomarcal.com.br/sala2">Sala 2</a>
+                        </div>
+            <div class="main__controls__button main__share_button">
+              <a href="https://discord.delanomarcal.com.br/sala3">Sala 3</a>
             </div>
           </div>
           <div onClick="invite()" class="main__controls__block">
             <div class="main__controls__button">
-              <span class="invite">Invite</span>
+              <span class="invite">Convite</span>
             </div>
           </div>
+        </div>
+        <div class="main__videos">
+          <div id="video-grid"></div>
         </div>
       </div>
       <div class="main__right">
