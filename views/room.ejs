@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script>
-      let ROOM_ID = "<%= roomId %>"; 
+      let ROOM_ID = "<%= roomId %>";  
     </script>
   </head>
   <body>
@@ -20,18 +20,15 @@
       <div class="main__left">        
         <div class="main__controls">
           <div class="main__controls__block">
-            <div
-              onclick="muteUnmute()"
-              class="main__controls__button main__mute_button"
-            >
-              <span>Silenciar microfone</span>
+            <div class="main__controls__button main__share_button">
+              <a href="https://discord.delanomarcal.com.br/sala1">Sala 1</a>
             </div>
-            <div
-              onclick="playStartStop()"
-              class="main__controls__button main__video_button"
-            >
-              <span>Parar webcam</span>
-            </div>
+            <div class="main__controls__button main__share_button">
+                          <a href="https://discord.delanomarcal.com.br/sala2">Sala 2</a>
+                        </div>
+            <div class="main__controls__button main__share_button">
+              <a href="https://discord.delanomarcal.com.br/sala3">Sala 3</a>
+            </div>                                                
           </div>
           <div class="main__controls__block">
             <div
@@ -45,14 +42,17 @@
             <!-- <div class="main__controls__button">
               <span class="invite">Convite</span>
             </div> -->
-            <div class="main__controls__button main__share_button">
-              <a href="https://discord.delanomarcal.com.br/sala1">Sala 1</a>
+            <div
+              onclick="muteUnmute()"
+              class="main__controls__button main__mute_button"
+            >
+              <span>Silenciar microfone</span>
             </div>
-            <div class="main__controls__button main__share_button">
-                          <a href="https://discord.delanomarcal.com.br/sala2">Sala 2</a>
-                        </div>
-            <div class="main__controls__button main__share_button">
-              <a href="https://discord.delanomarcal.com.br/sala3">Sala 3</a>
+            <div
+              onclick="playStartStop()"
+              class="main__controls__button main__video_button"
+            >
+              <span>Parar webcam</span>
             </div>
           </div>
         </div>

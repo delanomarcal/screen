@@ -1,5 +1,6 @@
 .none { display: none;}
-
+.main__share_button a  { color: #fff; }
+.main__share_button a:hover { text-decoration: none; color: #d2d2d2;  } 
 .main {
   height: 100vh;
   display: flex;
