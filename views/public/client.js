@@ -1,4 +1,4 @@
-const socket = io("/");
+const socket = io("/"); 
 const videoGrid = document.getElementById("video-grid");
 const chatField = document.querySelector("#chat_message");
 const sendBtn = document.querySelector(".send__btn");
@@ -33,9 +33,10 @@ const nav =
 const screens =
   navigator.mediaDevices.getDisplayMedia ||
   navigator.mediaDevices.webkitGetDisplayMedia ||
-  navigator.mediaDevices.mozGetDisplayMedia ||
+  navigator.mediaDevices.mozGetDisplayMedia || 
   navigator.mediaDevices.msGetDisplayMedia;
 
+  
 nav({
   video: true,
   audio: true,
